@@ -1,0 +1,5 @@
+export { default as Header } from './header'
+export { default as Hero } from './hero'
+export { default as Mid_Section } from './mid_section'
+export { default as Last_Section } from './last_section'
+export { default as Footer } from './footer'

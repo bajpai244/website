@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.11",
+    "@theme-ui/presets": "^0.3.4",
+    "firebase": "^8.2.5",
+    "glamor": "^2.20.40",
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-reveal": "^1.2.2",
+    "react-toastify": "^7.0.2",
+    "theme-ui": "^0.6.0-alpha.3"
+  }
+}
