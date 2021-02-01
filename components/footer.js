@@ -1,4 +1,5 @@
 import { Flex, Text } from 'theme-ui'
+import { social_data } from './header'
 
 export default () => (
   <Flex
@@ -13,10 +14,13 @@ export default () => (
     }}>
     <img src={'icons/logo.png'} sx={{ width: 100 }} />
     <Flex sx={{ flex: 1, justifyContent: 'flex-end', mt: [4] }}>
-      {social_data.map(({ path, width, height }) => (
+      {social_data.map(({ path, link, width, height }) => (
         <img
           src={path}
           key={path}
+          onClick={() => {
+            window.open(link, '_blank')
+          }}
           sx={{
             width: (width ? width : 20) * 0.8,
             height: (height ? height : 20) * 0.8,
@@ -35,25 +39,3 @@ export default () => (
     </Text>
   </Flex>
 )
-
-const social_data = [
-  {
-    path: 'icons/twitter.png',
-  },
-  {
-    path: 'icons/insta.png',
-  },
-  {
-    path: 'icons/facebook.png',
-    width: 10,
-    height: 20,
-  },
-  {
-    path: 'icons/phone.png',
-  },
-  {
-    path: 'icons/mail.png',
-    width: 26,
-    height: 19,
-  },
-]

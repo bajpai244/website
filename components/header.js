@@ -7,8 +7,11 @@ export default () => (
     sx={{ alignItems: 'center', pt: 3, width: '100vw' }}>
     <img src={'icons/logo.png'} sx={{ width: [80, 100] }} />
     <Flex sx={{ flex: 1, justifyContent: 'flex-end' }}>
-      {social_data.map(({ path, width, height }) => (
+      {social_data.map(({ path, link, width, height }) => (
         <img
+          onClick={() => {
+            window.open(link, '_blank')
+          }}
           src={path}
           key={path}
           sx={{
@@ -30,24 +33,29 @@ export default () => (
   </Flex>
 )
 
-const social_data = [
+export const social_data = [
   {
     path: 'icons/twitter.png',
+    link: 'https://twitter.com/fleeks_official',
   },
   {
     path: 'icons/insta.png',
+    link: 'https://www.instagram.com/fleeks_official/',
   },
   {
     path: 'icons/facebook.png',
     width: 10,
     height: 20,
+    link: 'https://www.facebook.com/Fleeks-102950775036211/',
   },
-  {
+  /*{
     path: 'icons/phone.png',
-  },
+    link: '',
+  },*/
   {
     path: 'icons/mail.png',
     width: 26,
     height: 19,
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=fleeks@fleeks.co.in',
   },
 ]
