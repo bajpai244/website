@@ -36,6 +36,7 @@ export default () => (
     </Flex>
     <Text sx={{ color: 'input', mt: [5], fontSize: [1] }}>
       © Copyright 2021. All rights reserved.
+      ONFLEEKERS TECHNOLOGIES PRIVATE LIMITED
     </Text>
   </Flex>
 )
